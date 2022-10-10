@@ -8,7 +8,6 @@
 function c(v, t) {
   let s = v * t;
   let s1 = Math.abs(v * t) % 109;
-  let s2 = Math.abs(v);
   if (v > 0) {
     return s % 109;
   } else if (v < 0 && s1 !== 0) {
