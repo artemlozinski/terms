@@ -7,11 +7,12 @@ function line(a, b) {
   if (a < b) {
     for (let i = a; i <= b; i++) {
       arr.push(i);
-    } console.log(arr);
+    } return arr;
   } else if (b < a) {
     for (let i = a; i >= b; i--) {
       arr.push(i);
-    } console.log(arr);
+    } return arr;
   }
 }
-line(10, 1);
+
+console.log(line(10, 1));

@@ -3,11 +3,13 @@
 // i-я ступенька состоит из чисел от 1 до i без пробелов.
 
 function ladder(a) {
-    for (let i = 1; i < a; i++) {
-        for (let e = 1; e < a; e++) {
-            
-        }
+  for (let i = 1; i <= a; i += 1) {
+    let b = "";
+    for (let e = 1; e <= i; e += 1) {
+      b += e;
     }
+    console.log(`${b}`);
+  }
 }
 
-ladder(3)
+ladder(5);

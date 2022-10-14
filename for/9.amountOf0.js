@@ -10,7 +10,7 @@ function amount(arr) {
       sum += 1;
     }
   }
-  console.log(sum);
+  return sum;
 }
 
-amount([5, 0, 0, 0, 200, 2]);
+console.log(amount([5, 0, 0, 0, 200, 2]));

@@ -6,7 +6,7 @@ function line(a, b) {
     for (let i = a; i <= b; i++) {
         arr.push(i);
     }
-    console.log(arr);
+    return arr
 }
 
-line(1, 10)
+console.log(line(1, 10))

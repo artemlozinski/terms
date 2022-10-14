@@ -6,7 +6,7 @@ function cube(a) {
   for (let i = 1; i <= a; i++) {
     b += i ** 3;
   }
-  console.log(b);
+  return b;
 }
 
-cube(9);
+console.log(cube(9));

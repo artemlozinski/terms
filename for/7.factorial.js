@@ -7,7 +7,7 @@ function f(a) {
   for (let i = 1; i <= a; i++) {
     fac *= i;
   }
-  console.log(fac);
+  return fac;
 }
 
-f(6)
+console.log(f(6));

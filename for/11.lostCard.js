@@ -11,7 +11,7 @@ function lost(a, b, c, d, e) {
   for (let i = 1; i <= a; i++) {
     sum1 += i;
   }
-  console.log(sum1 - sum2);
+  return sum1 - sum2;
 }
 
-lost(5, 3, 5, 2, 1);
+console.log(lost(5, 3, 5, 2, 1));

@@ -9,7 +9,7 @@ function sumf(a) {
     fac *= i;
     sumfac += fac;
   }
-  console.log(sumfac - 1);
+  return sumfac - 1;
 }
 
-sumf(7);
+console.log(sumf(7));

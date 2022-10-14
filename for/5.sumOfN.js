@@ -7,7 +7,7 @@ function Sum(arr) {
   for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
-  console.log(sum);
+  return sum;
 }
 
-Sum([235, 56]);
+console.log(Sum([235, 56]));

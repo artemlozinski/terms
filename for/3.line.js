@@ -7,7 +7,7 @@ function line(a, b) {
   for (let i = a - ((a + 1) % 2); i >= b - (b % 2) || i >= b; i -= 2) {
     arr.push(i);
   }
-  console.log(arr);
+  return arr;
 }
 
-line(-18, -29);
+console.log(line(-18, -29));
