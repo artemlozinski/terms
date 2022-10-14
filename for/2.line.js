@@ -3,16 +3,17 @@
 // порядке возрастания, если A < B, или в порядке убывания в противном случае.
 
 function line(a, b) {
-  const arr = []
+  const arr = [];
   if (a < b) {
     for (let i = a; i <= b; i++) {
       arr.push(i);
-    } return arr;
-  } else if (b < a) {
+    }
+  } else {
     for (let i = a; i >= b; i--) {
       arr.push(i);
-    } return arr;
+    }
   }
+  return arr;
 }
 
 console.log(line(10, 1));

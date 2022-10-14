@@ -4,12 +4,12 @@
 
 function sumf(a) {
   let fac = 1;
-  let sumfac = 1;
+  let sumfac = 0;
   for (let i = 1; i <= a; i++) {
     fac *= i;
     sumfac += fac;
   }
-  return sumfac - 1;
+  return sumfac;
 }
 
 console.log(sumf(7));
