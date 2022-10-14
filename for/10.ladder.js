@@ -2,10 +2,12 @@
 // По данному натуральному n ≤ 9 выведите лесенку из n ступенек,
 // i-я ступенька состоит из чисел от 1 до i без пробелов.
 
-const arr=[1, 2, 3]
-
-function ladder(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        
+function ladder(a) {
+    for (let i = 1; i < a; i++) {
+        for (let e = 1; e < a; e++) {
+            
+        }
     }
 }
+
+ladder(3)
