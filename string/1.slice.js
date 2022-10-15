@@ -18,11 +18,8 @@ console.log(string.slice(0, 9));
 
 function honest(a) {
   let b = "";
-  let arr = Array.from(a);
-  for (let i = 0; i < arr.length; i++) {
-    if (i % 2 === 0) {
-      b += arr[i];
-    }
+  for (let i = 0; i < a.length; i += 2) {
+      b += string[i];
   }
   return b;
 }
@@ -30,10 +27,9 @@ console.log(honest(string));
 
 function odd(a) {
   let b = "";
-  let arr = Array.from(a);
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < a.length; i++) {
     if (i % 2 !== 0) {
-      b += arr[i];
+      b += string[i];
     }
   }
   return b;
@@ -42,7 +38,7 @@ console.log(odd(string));
 
 function reverse(a) {
   let b = "";
-  let arr = Array.from(a);
+  const arr = Array.from(a);
   arr.reverse();
   for (let i = 0; i < arr.length; i++) {
     b += arr[i];
@@ -53,7 +49,7 @@ console.log(reverse(string));
 
 function revHon(a) {
   let b = "";
-  let arr = Array.from(a);
+  const arr = Array.from(a);
   arr.reverse();
   for (let i = 0; i < arr.length; i++) {
     if (i % 2 === 0) {
