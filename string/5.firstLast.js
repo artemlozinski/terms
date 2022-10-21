@@ -3,21 +3,21 @@
 // Если она встречается два и более раз, выведите индекс её первого и последнего появления.
 // Если буква f в данной строке не встречается, ничего не выводите.
 
-function index(a) {
-  const b = "f";
-  let c = "";
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] === b) {
-      c += (" " + i);
+function firstLast(str, element) {
+  let start = str.indexOf(element);
+  let end = str.lastIndexOf(element);
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === element) {
+      count += 1;
     }
   }
-  return c;
+  if (count === 0) {
+    return "Нет такой буквы";
+  } else if (count === 1) {
+    return start;
+  } else if (count > 1) {
+    return start + " " + end;
+  }
 }
-
-console.log(index("office")); /* Работает все равно не так как я хотел */
-
-// function fl(a) {
-//   return (a.indexOf("f"))
-// }
-
-// console.log(fl("coffee"))
+console.log(firstLast("comfffffort", "f"));
