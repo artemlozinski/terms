@@ -4,6 +4,8 @@
 // и вывести количество членов последовательности (не считая завершающего числа 0).
 // Числа, следующие за числом 0, считывать не нужно.
 
+const arr = [];
+
 function length(arr) {
   let i = 0;
   while (arr[i] !== 0) {
@@ -12,4 +14,4 @@ function length(arr) {
   return i;
 }
 
-console.log(length[("1", "7", "9", "0", "5")]);
+console.log(length([100, 0]));
