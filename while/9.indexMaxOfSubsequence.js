@@ -3,20 +3,19 @@
 // Определите индекс наибольшего элемента последовательности.
 // Нумерация элементов начинается с нуля.
 
-const arr = [];
 
 function indexMax(arr) {
   let i = 0;
-  let e = 1;
+  let index = 0;
   let max = 0;
   while (arr[i] !== 0) {
-    if (arr[e] > arr[i]) {
-      max = arr[e];
+    if (arr[i] > max) {
+      max = arr[i];
+      index = i
     }
     i++;
-    e++;
   }
-  return arr.indexOf(max);
+  return index;
 }
 
-console.log(indexMax([1, 7, 9, 0]));
+console.log(indexMax([1, 7, 9, 4, 8, 0]));

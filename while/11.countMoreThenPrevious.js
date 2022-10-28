@@ -2,20 +2,16 @@
 // Последовательность состоит из натуральных чисел и завершается числом 0.
 // Определите, сколько элементов этой последовательности больше предыдущего элемента.
 
-const arr = [];
-
 function moreThenLast(arr) {
   let i = 0;
-  let e = 1;
   let count = 0;
   while (arr[i] !== 0) {
-    if (arr[e] > arr[i]) {
+    if (arr[i + 1] > arr[i]) {
       count++;
     }
     i++;
-    e++;
   }
   return count;
 }
 
-console.log(moreThenLast([1, 5, 2, 4, 3, 0]));
+console.log(moreThenLast([1, 5, 2, 4, 5, 0]));

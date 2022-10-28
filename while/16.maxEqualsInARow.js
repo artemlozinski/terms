@@ -2,20 +2,23 @@
 // Дана последовательность натуральных чисел, завершающаяся числом 0.
 // Определите, какое наибольшее число подряд идущих элементов этой последовательности равны друг другу.
 
-let arr = [];
-
 function row(arr) {
   let i = 0;
-  let e = -1;
-  let count = 1;
-  while (arr[i] != 0) {
-    if (arr[i] == arr[e]) {
-      count++;
+  let countMax = 0;
+  let bufer = 0;
+  while (arr[i] !== 0) {
+    if (arr[i - 1] === arr[i]) {
+      bufer++;
+      if (bufer > countMax) {
+        countMax = bufer;
+      } 
     }
-    e++;
+    else {
+      bufer = 0;
+    }
     i++;
   }
-  return count;
+  return countMax + 1;
 }
 
-console.log(row([1, 7, 7, 7, 7, 9, 1, 0]));
+console.log(row([1, 7, 7, 7, 9, 9, 1, 0]));

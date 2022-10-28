@@ -7,13 +7,13 @@ function fibNum(n) {
   let c = 0;
   let b = 1;
   let a = 0;
-  count = 0;
+  let count = 0;
   while (c <= n) {
     c = a + b;
     a = b;
     b = c;
     count++;
-    if (n == a) {
+    if (n === a) {
       return count;
     } else if (a > n || count > n) {
       return -1;

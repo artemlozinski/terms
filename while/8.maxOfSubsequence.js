@@ -2,20 +2,16 @@
 // Последовательность состоит из натуральных чисел и завершается числом 0.
 // Определите значение наибольшего элемента последовательности.
 
-const arr = [];
-
 function max(arr) {
   let i = 0;
-  let e = 1;
   let max = 0;
   while (arr[i] !== 0) {
-    if (arr[e] > arr[i]) {
-      max = arr[e];
+    if (arr[i] > max) {
+      max = arr[i];
     }
     i++;
-    e++;
   }
   return max;
 }
 
-console.log(max([1, 7, 9, 0]));
+console.log(max([1, 7, 7, 8, 0]));
